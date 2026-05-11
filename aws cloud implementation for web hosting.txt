@@ -1,0 +1,75 @@
+AWS Cloud Implementation for Web Hosting – Project Notes
+1. Introduction
+Amazon Web Services (AWS) provides scalable, secure, and cost‑effective cloud services for hosting websites. AWS supports both static web hosting (HTML, CSS, JS) and dynamic web hosting (PHP, databases, CMS). Web hosting on AWS ensures high availability, global reach, and built‑in security features. [dev.to]
+
+2. Types of Web Hosting on AWS
+
+Static Website Hosting
+
+Uses Amazon S3 to store website files.
+Content is delivered globally using Amazon CloudFront (CDN).
+Ideal for portfolios, blogs, resumes, and documentation sites. [medium.com]
+
+
+Dynamic Website Hosting
+
+Uses Amazon EC2 for backend processing.
+Databases are hosted using Amazon RDS.
+Suitable for websites using PHP, WordPress, or frameworks. [aws.plainenglish.io]
+
+
+
+
+3. Core AWS Services Used
+Amazon S3 (Simple Storage Service)
+
+Object storage service for hosting static website files.
+Highly durable, scalable, and cost‑efficient.
+Supports static website hosting with public access configuration. [dev.to]
+
+Amazon CloudFront
+
+Content Delivery Network (CDN).
+Delivers website content from the nearest edge location.
+Improves performance, reduces latency, and supports HTTPS. [medium.com]
+
+Amazon Route 53
+
+Scalable DNS service.
+Maps domain names to AWS resources like S3 or EC2.
+Supports health checks and traffic routing policies. [medium.com]
+
+Amazon EC2
+
+Virtual servers for hosting dynamic web applications.
+Provides full control over OS, software stack, and security groups.
+Suitable for CMS‑based websites like WordPress.
+
+
+4. Architecture Overview (Static Website Example)
+
+User requests the website using a domain name.
+Route 53 resolves the domain and routes traffic.
+CloudFront serves cached content from edge locations.
+If not cached, CloudFront fetches the files from S3 bucket.
+Website content is displayed securely via HTTPS. [medium.com], [dev.to]
+
+
+5. Security Implementation
+
+HTTPS / SSL using AWS Certificate Manager (ACM).
+IAM policies for controlled access.
+Bucket policies to restrict direct S3 access.
+Optional AWS WAF to protect against common web attacks. [aws.plainenglish.io]
+
+
+6. Advantages of AWS Web Hosting
+
+High scalability and availability.
+Pay‑as‑you‑use pricing model.
+Global performance through CDN.
+Secure and reliable infrastructure. [aws.plainenglish.io]
+
+
+7. Conclusion
+AWS cloud implementation for web hosting offers a modern, reliable, and secure approach to hosting web applications. By leveraging services like S3, CloudFront, Route 53, and EC2, organisations can deploy highly available websites with minimal infrastructure management.
