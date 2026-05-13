@@ -102,8 +102,8 @@ This AWS-based web hosting solution provides a robust, scalable, and secure plat
 
 
 ## What's Inside
-- README.md — this file
-- project-notes.txt — my project notes
+- README.md — project documentation
+- project 2.txt — downloads
 
 ## Author
 Made with ❤️ by **priya**
