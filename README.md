@@ -1,4 +1,4 @@
-my-first-project
+my-second project
 
 ## About This Project
 This is my second repository on GitHub. I created it
